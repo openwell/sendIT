@@ -1,0 +1,284 @@
+*{box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  color: black;
+}
+
+body{
+	background: #fff;
+}
+ul{
+  list-style: none;
+  text-decoration: none;
+}
+
+li{
+  text-decoration: none;
+}
+
+/*Header*/
+/*.fb_cont_wrapper{
+ 	max-width: 1200px;
+ 	margin: 0 auto;
+}*/
+
+.header_wrapper{
+	height: 50px;
+	border: 0.5px dashed black;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.enquiry_details{
+	display: flex;
+}
+.enquiry_details_emails{
+	padding: 10px;
+}
+
+.enquiry_details_phone{
+	padding: 10px;
+}
+
+nav{
+	height: 50px;
+	border: 0.5px dashed black;
+	margin: 10px auto;
+}
+
+nav ul{
+	display: flex;
+	justify-content: center;
+	padding-top: 10px;
+}
+
+nav ul a{
+	padding: 10px;
+}
+
+nav ul li{
+	border: 1px solid black;
+	padding: 5px;
+	background: orange;
+}
+nav ul li:nth-of-type(1){
+	border-top-left-radius: 10px;
+}
+
+nav ul li:nth-of-type(5){
+	border-top-right-radius: 10px;
+}
+nav ul li a:link{
+	text-decoration: none;
+}
+
+    .level1{
+	height: 500px;
+	border: 0.5px dashed black;
+	margin: 0 auto;
+	background: grey;
+   }
+
+   .level1_text{
+   	padding: 100px 0 0 80px;
+   }
+   
+    .level1_text form input{
+     border: none;
+     padding: 4px;
+     border-bottom: 2px solid red;
+     background: transparent;
+    }
+    .level1_text form input:hover{
+     background: #ffff;
+     border-radius: 5px;
+    }
+
+    .level1_text form> label{
+    	margin-right: 125px;
+    }
+    
+    .level1_text form button{
+    	padding: 10px;
+    	border-radius: 200px;
+    	border: 0.5px solid green;
+    	background: white;
+    }
+
+
+   .drone{
+   	position: absolute;
+   	top: 250px;
+   	left: 65%;
+   }
+
+   .level1_login{
+   	position: absolute;
+   	top: 200px;
+   	left: calc(50% + 200px);
+   	background-color: rgba(0,0,0,0.6);
+   	padding: 10px;
+   	border-radius: 20px;
+   }
+
+   .level1_login input{
+   	padding: 10px;
+   	border-radius: 10px;
+   }
+
+   .level1_login button{
+   	padding: 10px;
+   	border-radius: 200px;
+   }
+
+    /*Level Two*/
+   .level2{
+   	 text-align: center;
+   }
+
+   .info_wrapper{
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     margin: 0 auto;
+     max-width: 100%;
+     /*background: #606E87;*/
+     background: white;
+   }
+
+   .info_wrapper div img{
+   	/*flex: 0 1 600px;*/
+   }
+
+   .float_tracker{
+   	position: fixed;
+   	bottom: 0;
+   	background: #606E87;
+   	width: 100%;
+   	height: 50px;
+   	padding: 10px;
+   	text-align: text;
+   }
+
+    .float_tracker p{
+      position: absolute;
+      top: 15px;
+       left: 20%;
+     }
+
+   .float_tracker input{
+   	padding: 10px;
+   	margin: 0 auto;
+   	border-radius: 40px;
+   }
+
+     .float_tracker button{
+   		padding: 10px 20px;
+   		border-radius: 40px;
+   		margin-left: 20px;
+     }
+
+    .float_tracker form{
+      position: absolute;
+      top: 10px;
+      left: 40%;
+    }
+
+    .footer_bottom_area{
+    	margin: 0 auto;
+    	height: 150px;
+    	display: flex;
+    	flex-wrap: wrap;
+    	/*justify-content: space-between;*/
+    }
+    .footer_bottom_area div{
+    	flex: 1;
+    	text-align: center;
+    }
+
+
+    /*======================================================
+                          Signup Page
+     ======================================================*/
+
+     .signup_form{
+     	max-width: 350px;
+     	margin: 0 auto;
+     	border: 1px solid black;
+     	padding: 20px;
+     }
+
+     .signup_form input{
+     	padding: 5px;
+     	float: right;
+     /*	display: table-cell;*/
+     }
+     .signup_form button{
+       padding: 10px 20px;
+       border-radius: 200px;
+     }
+
+
+      /*======================================================
+                          DashBoard
+     ======================================================*/
+     .dashB_container{
+	  max-width: 1200px;
+	  padding: 20px;
+	  margin: 0 auto;
+	  border:1px solid black;
+     }
+
+	  .dashB_nav {
+	  	max-width: 100vw;
+	  	height: 40px;
+	  	margin-bottom: 10px;
+	  	background: #fff;
+	  }
+
+
+     .table{ 
+      display: table; 
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      background: #C66E17;
+      border-radius: 20px;
+	 }
+	 table, th, td{
+	 	border: 1px solid black;
+	 	padding: 10px;
+	 }
+	.stats{
+		max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 20px;
+        padding: 10px;
+	}
+
+		 /*Order Page*/
+	.order_form{
+		max-width: 400px;
+		padding: 20px;
+		margin: 0 auto;
+		border-radius: 20px;
+		background: #5B2BEF;
+	}
+	.order_form input{
+		float: right;
+		padding: 5px;
+	}
+	.order_form button{
+		padding: 10px 20px;
+		border-radius: 200px;
+	}
+
+
+	/*Order Summary*/
+	.order_details{
+		max-width: 600px;
+        margin: 0 auto;
+	}
