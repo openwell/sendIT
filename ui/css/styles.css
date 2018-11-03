@@ -32,7 +32,8 @@ button {
 }
 
 button:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .fb_cont_wrapper{
   max-width: 1400px;
@@ -47,6 +48,9 @@ button:hover {
 }
 .enquiry_details{
 	display: flex;
+}
+  i{
+  color: #2866E5;
 }
 .enquiry_details_emails{
 	padding: 10px;
@@ -79,7 +83,22 @@ nav ul li{
 nav ul li a:link{
 	text-decoration: none;
 }
+   .up_down{
+        animation-delay: .5s;
+        animation: float 4s infinite;
+    }
+      @keyframes float{
+        0% {
+        transform: translatey(0);
+        }
 
+        50% {
+        transform: translatey(-10px);
+        }
+        100% {
+        transform: translatey(0); 
+      }
+    }
   .level1{
 	height: 500px;
 	 margin: 0 auto;
@@ -159,7 +178,8 @@ nav ul li a:link{
      /*background: #606E87;*/
      background: white;
    }
-
+      
+      /*Landing Footer*/
    .float_tracker{
    	position: fixed;
    	bottom: 0;
@@ -203,9 +223,7 @@ nav ul li a:link{
     	display: flex;
     	flex-wrap: wrap;
     }
-    .footer_bottom_area i{
-      color:#2866E5;
-    }
+    
     .footer_bottom_area a:link{
       text-decoration: none;
     }
@@ -267,40 +285,80 @@ nav ul li a:link{
       /*======================================================
                           DashBoard
      ======================================================*/
-     .dashB_container{
-	  max-width: 1200px;
-	  padding: 20px;
-	  margin: 0 auto;
-	  border:1px solid black;
-     }
-
-	  .dashB_nav {
-	  	max-width: 100vw;
-	  	height: 40px;
-	  	margin-bottom: 10px;
-	  	background: #fff;
-	  }
-
+    
 
      .table{ 
       display: table; 
-      max-width: 600px;
+      max-width: 800px;
       margin: 0 auto;
       margin-bottom: 20px;
-      background: #C66E17;
-      border-radius: 20px;
-	 }
-	 table, th, td{
-	 	border: 1px solid black;
-	 	padding: 10px;
-	 }
-	.stats{
-		max-width: 600px;
-        margin: 0 auto;
-        background: #fff;
-        border-radius: 20px;
+	     }
+       .dashB_table{
+        background: #4d69b1;
+        height: 50vh;
+        padding: 20px;
+       }
+
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
         padding: 10px;
-	}
+        }
+        tr:nth-child(even) {
+        background-color: #dddddd;
+       }
+       tr:nth-child(odd) {
+        background-color: #fff;
+       }
+
+      
+      /*User footer*/
+      .footer_bottom_area_user{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footer_bottom_area_user a:link{
+      text-decoration: none;
+    }
+    .footer_bottom_area_user div{
+      flex: 1;
+      text-align: center;
+    }
+    
+   
+	   .stats{
+		    max-width: 100%;
+        height: 300px;
+        margin: 0 auto;
+        background: #ecf0f1;
+        padding: 20px;
+	   }
+
+     .stats_div{
+      max-width: 1000px;
+      margin: 0 auto;
+     }
+
+     .stats_div3{
+      display: flex;
+     }
+      .stats_div3 div{
+          flex: 1;
+          border-right: 0.5px solid black;
+          padding: 20px;
+      }
+
+       /*======================================================
+                          OrderPage
+     ======================================================*/
 
 		 /*Order Page*/
 	.order_form{
@@ -318,10 +376,103 @@ nav ul li a:link{
 		padding: 10px 20px;
 		border-radius: 200px;
 	}
+ /*======================================================
+                          Order Details
+     ======================================================*/
 
+    	/*Order Summary*/
+    	.order_details_wrapper{
+		     background: #4d69b1;
+        /*height: 70vh;*/
+        padding: 20px;
+	   }
+     .order_details{
+      max-width: 50vw;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     }
+    .order_details p{
+      padding: 10px;
+    }
 
-	/*Order Summary*/
-	.order_details{
-		max-width: 600px;
+    .order_details_wrapper .map{      
+      width: 50vw;
+      height: 400px;
+       margin: 0 auto;
+       margin-top: 30px;
+    }
+   /*======================================================
+                          Edit page
+     ======================================================*/
+     .edit_main{
+       background: #fff;
+        height: 100vh;
+        padding: 20px;
+     }
+
+    .order_form_edit{
+    max-width: 400px;
+    padding: 20px;
     margin: 0 auto;
-	}
+    border-radius: 20px;
+    background:  #4d69b1;
+  }
+
+   .order_form_edit form{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   }
+
+    .order_form_edit input{
+      background: #4d69b1;
+      padding: 5px;
+      margin: 5px 0;
+      border: 0.5px solid #ffff;
+    }
+  .order_form_edit button{
+    padding: 10px 20px;
+    border-radius: 200px;
+    background: #ffff;
+   }
+
+   .order_form_edit label{
+       transform-origin: left top;
+       transition: transform cubic-bezier(.25,.8,.25,1) .5s;
+       position: absolute;
+       left: 100px;
+       top: 0;
+       pointer-events: none;
+       color: #fff;
+   }
+    
+    .e1{
+      transform: translate3d(0,8px,0) scale(1);
+      font-size: 20px;
+    }
+
+    input:blur + .e1{
+      transform: translate3d(0,8px,0) scale(1);
+      font-size: 20px;
+    }
+
+    input:focus + .e1{
+       transform: translate3d(0,-10px,0) scale(.85);
+       color: #fff;
+       font-size: 15px;
+    }
+      input:valid + .e1{
+       transform: translate3d(0,-10px,0) scale(.85);
+       color: #fff;
+       font-size: 15px;
+    }
+
+    .order_form_edit div{
+      position: relative;
+    }
+/*======================================================
+                          Admin Page
+     ======================================================*/
