@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard</title>
+	<link rel="shortcut icon" href="../images/favi.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<script type="text/javascript" src="../js/main.js"></script>
+</head>
+<body>
+	<div class="fb_cont_wrapper">
+	<header class="header_wrapper">
+		<div class="logo">
+			<a href="../index.html"><img src="../images/logo.png" alt="zootopiaXpress"></a>
+		</div>
+
+		<div class="enquiry_details">
+			<div class="enquiry_details_emails">
+				<p><i class="fas fa-envelope"></i>support@zootopiaexpress.com</p>
+				<small>Prompt email responds</small>
+			</div>
+			<div class="enquiry_details_phone">
+				<p><i class="fas fa-phone"></i>234-08-223-76</p>
+				<small>24 hours support, 7 days a week</small>
+			</div>
+		</div>
+	</header>
+	<nav>
+		<div class="nav_bar_dashB">
+			<ul>
+				<li><i class="fas fa-bullhorn"></i><a href="dashboard.html">Dashboard</a></li>
+				<li><i class="fas fa-truck-moving"></i><a href="order.html">Send a parcel</a></li>
+				<li><i class="fas fa-box-open"></i><a href="">My Shipments</a></li>
+				<li><i class="fas fa-user"></i><a href="">My Account</a></li>		
+				<li><i class="fas fa-power-off"></i><a href="">LogOut</a></li>
+			</ul>	
+		</div>
+	</nav>
+
+	<section class="edit_main">
+		<div class="order_form_edit">
+			<h3>New Order Form</h3>
+			<form action="" method="">
+				<div>
+				<input type="text" name="location" required required size="30">
+				<label for="location" class="e1">Location</label>
+				</div><br>
+				<div>
+				<input type="text" name="destination"  required required size="30">
+				<label for="destination" class="e1">Destination</label>
+				</div><br>
+				<div>
+				<input type="text" name="weight" required required size="30">
+				<label for="weight" class="e1">Unit Weight</label>
+				</div><br>
+				<div>
+				<div>
+				<input type="text" name="pickup-address" required required size="30">
+				<label for="weight" class="e1">Pickup Address</label>
+				</div><br>
+				<div>
+				<input type="text" name="address" required required size="30">
+				<label for="weight" class="e1">Address of Reciever</label>
+				</div><br>
+				<div>
+				<input type="text" name="reciever_phone" required size="30">
+				<label for="weight" class="e1">Phone No of Reciever</label>
+				</div><br><br>
+				
+				<button type="Submit" name="order_submit">Get Quote</button>
+			  </form><br><br>
+			     <div>
+			    <input type="text" name="price" readonly="" value="" required>
+				<label for="price" class="e1">Price</label>
+				<br><br>
+				<button type="Submit" name="order_submit">Place Order</button>
+				</div>
+		</div>
+	</section>
+	<footer>	
+		<div class="footer_bottom_area_user">
+			<div>
+			    <p>&#169; zootopiaExpress</p>
+			</div>
+			<div>
+				<p>Terms & Conditions <span>&#124;</span> Cookie Policy <span>&#124;</span> Privacy Policy <span>&#124;</span> Blog</p>
+			</div>
+			<div>
+				<a href=""><i class="fab fa-twitter"></i>twitter</a>
+				<a href=""><i class="fab fa-linkedin"></i>linkdein</a>	
+			</div>
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
