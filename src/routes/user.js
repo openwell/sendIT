@@ -19,7 +19,7 @@ const parcelRoute = (app) => {
 
   app.put(
     '/api/v1/parcels/:parcelid/cancel',
-    parcelControler.delete,
+    parcelControler.cancel,
   );
 
     app.get(
