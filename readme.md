@@ -1,9 +1,8 @@
-# sendIT aka Zootopia Express
+# SendIT aka Zootopia Express
 
 [![Build Status](https://travis-ci.org/openwell/sendIT.svg?branch=develop)](https://travis-ci.org/openwell/sendIT)
 [![Coverage Status](https://coveralls.io/repos/github/openwell/sendIT/badge.svg)](https://coveralls.io/github/openwell/sendIT)
 [![Maintainability](https://api.codeclimate.com/v1/badges/52451433c1bad812c5f7/maintainability)](https://codeclimate.com/github/openwell/sendIT/maintainability)
-
 
 # Parcel Delivery Service
 
@@ -41,7 +40,10 @@ Npm v5.6 or above
 - Run npm start to start the app
 - App runs on port 3000
 - Access endpoints on **localhost:3000**
-
+## On Heroku
+- Pull the [develop](https://github.com/openwell/sendIT) branch off this repository
+- Run `npm install` to install all dependencies
+- Access endpoints on [sendit.herokuapp.com](https://sendiit.herokuapp.com)
 
 ## Running the tests
 
@@ -51,6 +53,12 @@ Run `npm test` in the terminal for the cloned folder.
 
 - It tests the API end-point.
 - It tests the REST API functionality
+
+### Deployment on Heroku Server
+
+- Create an account on Heroku.
+- Select [ch-deploy-application-heroku-161860687](https://github.com/openwell/sendIT/tree/ch-deploy-application-heroku-161860687) to deploy on.
+- Run **heroku push ch-deploy-application-heroku-161860687:master** to deploy
 
 
 ## Built With
