@@ -13,8 +13,13 @@ const parcelRoute = (app) => {
   );
 
   app.get(
-    '/api/v1/parcels/:id',
+    '/api/v1/parcels/:parcelid',
     parcelControler.getOne,
+  );
+
+  app.put(
+    '/api/v1/parcels/:parcelid/cancel',
+    parcelControler.delete,
   );
 };
 
