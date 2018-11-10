@@ -1,6 +1,14 @@
 import senditModel from '../model/parcelModel';
 
 const parcelControler = {
+   getAll(req, res) {
+     const result = senditModel.findAll();
+     res.status(200).send({
+       status: 'Success',
+       message: result,
+     });
+    
+   },
 
   createNew(req, res) {
     if (!req.body.destination || !req.body.location || !req.body.unit_weight) {

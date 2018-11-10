@@ -1,6 +1,3 @@
-import moment from 'moment';
-import uuid from 'uuid';
-
 const momentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
 
 
@@ -11,7 +8,6 @@ class Sendit {
 
   create(data) {
     const newParcel = {
-      id: uuid.v4(),
       parcel_id: data.parcel_id || '',
       user: data.user || '',
       location: data.location || '',
@@ -23,13 +19,15 @@ class Sendit {
       price: data.price || '',
       status: data.status || '',
       presentLocation: data.presentLocation || '',
-      createdDate: momentDate,
-      modifiedDate: momentDate,
     };
 
     this.ds.push(newParcel);
     return newParcel;
   }
+
+   findAll() {
+     return this.ds;
+   }
 
   
 }
