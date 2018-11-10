@@ -25,16 +25,22 @@
   "homepage": "https://github.com/openwell/sendIT#readme",
   "dependencies": {
     "ajv": "^6.0.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3"
-  },
-  "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
-    "babel-watch": "^2.0.7"
+    "babel-watch": "^2.0.7",
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "express": "^4.16.3"
+    
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^13.1.0"
     
   }
 }
