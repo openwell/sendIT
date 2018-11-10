@@ -6,10 +6,15 @@ const parcelRoute = (app) => {
     '/api/v1/parcels',
     parcelControler.getAll,
   );
-  
+
   app.post(
     '/api/v1/parcels',
     parcelControler.createNew,
+  );
+
+  app.get(
+    '/api/v1/parcels/:id',
+    parcelControler.getOne,
   );
 };
 
