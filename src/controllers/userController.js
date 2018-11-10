@@ -35,7 +35,7 @@ const parcelControler = {
   },
 
   cancel(req, res) {
-    const del = senditModel.delete(req.params.parcelid);
+    const del = senditModel.cancel(req.params.parcelid);
     if (del === false) {
       res.status(400).send({
         message: 'Parcel Order id not found'
