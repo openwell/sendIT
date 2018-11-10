@@ -31,7 +31,7 @@ class Sendit {
     return this.ds.find((todo, index) => todo.parcel_id === parcelid);
   }
 
-  delete(parcelid) {
+  cancel(parcelid) {
     const del = this.findOne(parcelid);
     if (del === undefined) {
       return false;
@@ -40,6 +40,11 @@ class Sendit {
     this.ds.splice(index);
     return true;
   }
+
+   findUserparcel(userid) {
+     const findId = this.ds.filter((todo, index) => todo.userid === userid);
+     return findId;
+   }
 
   
 }

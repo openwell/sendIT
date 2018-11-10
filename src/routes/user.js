@@ -21,6 +21,11 @@ const parcelRoute = (app) => {
     '/api/v1/parcels/:parcelid/cancel',
     parcelControler.delete,
   );
+
+    app.get(
+      '/api/v1/user/:userid/parcels',
+      parcelControler.get_user_parcel,
+    );
 };
 
 

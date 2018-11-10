@@ -34,7 +34,7 @@ const parcelControler = {
     }
   },
 
-  delete(req, res) {
+  cancel(req, res) {
     const del = senditModel.delete(req.params.parcelid);
     if (del === false) {
       res.status(400).send({
@@ -42,10 +42,25 @@ const parcelControler = {
       });
     } else {
       res.status(200).send({
-        message: 'Parcel Order deleted'
+        message: 'Parcel Order Canceled'
       });
     }
   },
+
+    get_user_parcel(req, res) {
+      const result = senditModel.findUserparcel(req.params.userid);
+      if (result.length === 0) {
+        res.status(400).send({
+          status: 'Failed',
+          message: 'User Parcel not found',
+        });
+      } else {
+        res.status(200).send({
+          status: 'Success',
+          message: result,
+        });
+      }
+    },
 
 
 };
