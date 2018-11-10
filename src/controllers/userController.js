@@ -19,6 +19,21 @@ const parcelControler = {
     }
   },
 
+  getOne(req, res) {
+    const getone = senditModel.findOne(req.params.id);
+    if (getone === undefined) {
+      res.status(400).send({
+        status: 'Failed',
+        message: 'id not found',
+      });
+    } else {
+      res.status(200).send({
+        status: 'Success',
+        message: `${getone}`,
+      });
+    }
+  },
+
 
 };
 

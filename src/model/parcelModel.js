@@ -29,6 +29,10 @@ class Sendit {
      return this.ds;
    }
 
+  findOne(id) {
+    return this.ds.find((todo, index) => todo.parcel_id === id);
+  }
+
   
 }
 
