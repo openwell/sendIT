@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node ./src/index.js --exec babel-node",
-    "test": "mocha --require babel-core/register ./src/test/",
+    "test": "nyc mocha --require babel-core/register ./src/test/",
     "coverage": "nyc report --reporter=text=lcov | coveralls",
     "lint": "eslint --fix-dry-run ./src/index.js ./src/controllers/"
   },
