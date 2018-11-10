@@ -3,7 +3,7 @@ node_js:
  - "stable"
 addons:
   code_climate:
-    repo_token: 546a5057e98c47918d01b27fbacfb38fc573364a
+    repo_token: f4b6ddec212ca9613de2e49e741a63efef729762a657a5463e29484e5eb54465
 cache:
   directories:
     - "node_modules"
