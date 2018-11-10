@@ -1,5 +1,3 @@
-const momentDate = moment().format('MMMM Do YYYY, h:mm:ss a');
-
 
 class Sendit {
   constructor() {
@@ -9,7 +7,7 @@ class Sendit {
   create(data) {
     const newParcel = {
       parcel_id: data.parcel_id || '',
-      user: data.user || '',
+      userid: data.userid || '',
       location: data.location || '',
       destination: data.destination || '',
       unit_weight: data.unit_weight || '',
@@ -29,8 +27,18 @@ class Sendit {
      return this.ds;
    }
 
-  findOne(id) {
-    return this.ds.find((todo, index) => todo.parcel_id === id);
+  findOne(parcelid) {
+    return this.ds.find((todo, index) => todo.parcel_id === parcelid);
+  }
+
+  delete(parcelid) {
+    const del = this.findOne(parcelid);
+    if (del === undefined) {
+      return false;
+    }
+    const index = this.ds.indexOf(del);
+    this.ds.splice(index);
+    return true;
   }
 
   
