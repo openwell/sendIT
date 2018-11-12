@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/openwell/sendIT.svg?branch=develop)](https://travis-ci.org/openwell/sendIT)
 [![Coverage Status](https://coveralls.io/repos/github/openwell/sendIT/badge.svg)](https://coveralls.io/github/openwell/sendIT)
 [![Maintainability](https://api.codeclimate.com/v1/badges/52451433c1bad812c5f7/maintainability)](https://codeclimate.com/github/openwell/sendIT/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/52451433c1bad812c5f7/test_coverage)](https://codeclimate.com/github/openwell/sendIT/test_coverage)
 
 # Parcel Delivery Service
 
