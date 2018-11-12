@@ -1,16 +1,21 @@
 language: node_js
 node_js:
  - "stable"
-addons:
-  code_climate:
-    repo_token: f4b6ddec212ca9613de2e49e741a63efef729762a657a5463e29484e5eb54465
+env:
+  global:
+    - CC_TEST_REPORTER_ID=f4b6ddec212ca9613de2e49e741a63efef729762a657a5463e29484e5eb54465
 cache:
   directories:
     - "node_modules"
 before_script:
-  - npm install codeclimate-test-reporter istanbul -g
+   - npm install codeclimate-test-reporter istanbul -g
+   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+   - chmod +x ./cc-test-reporter
+   - ./cc-test-reporter before-build  
 script:
   - npm test
+  - bundle exec rspec
 after_script:
   - npm run coverage
   - codeclimate-test-reporter < ./coverage/lcov.info
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
