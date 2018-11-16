@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 
-app.all('/*', (req, res) => {
+app.all('*', (req, res) => {
   res.status(404).json({
     Status: 'Failed',
     Messge: 'Page Not Found',
