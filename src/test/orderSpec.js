@@ -6,22 +6,22 @@ use(chaiHttp);
 const should = _should();
 
 before((done) => {
-  const testParcelorder = {
-    parcel_id: '009',
-    userid: 'tomi',
+  const testParcelOrder = {
+    parcelId: '009',
+    userId: 'tomi',
     location: 'kwara',
     destination: 'kogi',
-    unit_weight: '1kg',
-    pickup_address: 'Aburu',
-    address_of_reciever: 'Obasojo way',
-    phone_no_of_receiver: '08484848',
+    unitWeight: '1kg',
+    pickupAddress: 'Aburu',
+    addressOfReciever: 'Obasojo way',
+    phoneNoOfReceiver: '08484848',
     price: 'N20',
     status: 'Processing',
     presentLocation: 'lagos office',
   };
   request(server)
     .post('/api/v1/parcels')
-    .send(testParcelorder)
+    .send(testParcelOrder)
     .end((err, res) => {
       res.should.have.status(201);
       res.body.should.be.a('object');
@@ -44,15 +44,6 @@ describe('/GET /', () => {
 
 describe('/GET /api/v1/parcels', () => {
   // 1
-  // it('should return parcel db empty', (done) => {
-  //     request(server)
-  //         .get('/api/v1/parcels')
-  //         .end((err, res) => {
-  //             res.should.have.status(404);
-  //             res.body.should.be.a('object');
-  //             done();
-  //         })
-  // })
   // 2
   it('should return all parcel', (done) => {
     request(server)
@@ -140,51 +131,41 @@ describe('/PUT /api/v1/parcels/:parcelid/cancel', () => {
 
 // Without Location
 describe('/POST /api/v1/parcels', () => {
-  // 1
-  it('All fields are required', (done) => {
-    const testParcelorder = {
-      parcel_id: '012',
-      userid: 'jumi',
-      destination: 'kogi',
-      unit_weight: '1kg',
-      pickup_address: 'Aburu',
-      address_of_reciever: 'Obasojo way',
-      phone_no_of_receiver: '08484848',
-      price: 'N20',
-      status: 'Processing',
-      presentLocation: 'lagos office',
-    };
+  const testParcelOrder = {
+    parcelId: '012',
+    userId: 'jumi',
+    location: 'kwara',
+    destination: 'kogi',
+    unitWeight: '1kg',
+    pickupAddress: 'Aburu',
+    addressOfReciever: 'Obasojo way',
+    phoneNoOfReceiver: '08484848',
+    price: 'N20',
+    status: 'Processing',
+    presentLocation: 'lagos office',
+  };
 
+  // 1
+  
+  it('should create new parcel order', (done) => {
     request(server)
       .post('/api/v1/parcels')
-      .send(testParcelorder)
+      .send(testParcelOrder)
       .end((err, res) => {
-        res.should.have.status(400);
+        res.should.have.status(201);
         res.body.should.be.a('object');
         done();
       });
   });
-  // 2
-  it('should create new parcel order', (done) => {
-    const testParcelorder2 = {
-      parcel_id: '011',
-      userid: 'tola',
-      location: 'kwara',
-      destination: 'kogi',
-      unit_weight: '1kg',
-      pickup_address: 'Aburu',
-      address_of_reciever: 'Obasojo way',
-      phone_no_of_receiver: '08484848',
-      price: 'N20',
-      status: 'Processing',
-      presentLocation: 'lagos office',
-    };
+ // 2
+  it('All fields are required', (done) => {
+    testParcelOrder.location = '';
 
     request(server)
       .post('/api/v1/parcels')
-      .send(testParcelorder2)
+      .send(testParcelOrder)
       .end((err, res) => {
-        res.should.have.status(201);
+        res.should.have.status(400);
         res.body.should.be.a('object');
         done();
       });
