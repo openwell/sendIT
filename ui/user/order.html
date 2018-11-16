@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="../images/favi.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	<script type="text/javascript" src="../js/main.js"></script>
+	
 </head>
 <body>
 	<div class="fb_cont_wrapper">
@@ -18,11 +18,11 @@
 
 		<div class="enquiry_details">
 			<div class="enquiry_details_emails">
-				<p><i class="fas fa-envelope"></i>support@zootopiaexpress.com</p>
+				<p><i class="fas fa-envelope"></i> support@sendit.com</p>
 				<small>Prompt email responds</small>
 			</div>
 			<div class="enquiry_details_phone">
-				<p><i class="fas fa-phone"></i>234-08-223-76</p>
+				<p><i class="fas fa-phone"></i> 234-08-223-76</p>
 				<small>24 hours support, 7 days a week</small>
 			</div>
 		</div>
@@ -32,49 +32,64 @@
 			<ul>
 				<li><i class="fas fa-bullhorn"></i><a href="dashboard.html">Dashboard</a></li>
 				<li><i class="fas fa-truck-moving"></i><a href="order.html">Send a parcel</a></li>
-				<li><i class="fas fa-box-open"></i><a href="">My Shipments</a></li>
-				<li><i class="fas fa-user"></i><a href="">My Account</a></li>		
+				<li><i class="fas fa-box-open"></i><a href="allorders.html">My Shipments</a></li>
+				<li><i class="fas fa-user"></i><a href="userprofile.html">My Account</a></li>		
 				<li><i class="fas fa-power-off"></i><a href="">LogOut</a></li>
 			</ul>	
 		</div>
 	</nav>
+
+
+
 
 	<section class="edit_main">
 		<div class="order_form_edit">
 			<h3>New Order Form</h3>
 			<form action="" method="">
 				<div>
-				<input type="text" name="location" required required size="30">
-				<label for="location" class="e1">Location</label>
-				</div><br>
-				<div>
-				<input type="text" name="destination"  required required size="30">
-				<label for="destination" class="e1">Destination</label>
-				</div><br>
-				<div>
-				<input type="text" name="weight" required required size="30">
-				<label for="weight" class="e1">Unit Weight</label>
-				</div><br>
-				<div>
+				<!-- <label for="location" >Location</label> -->
+				<select name="" id="location" class="form_control" required="">
+					 <option selected="" disabled="">--Select State--</option>
+                            <option value="1061493586">Abia</option><option value="1061493587">Abuja</option><option value="1061493588">Adamawa</option><option value="1061493589">Akwa Ibom</option><option value="1061493590">Anambra</option><option value="1061493591">Bauchi</option><option value="1061493592">Bayelsa</option><option value="1061493593">Benue</option><option value="1061493594">Borno</option><option value="1061493595">Cross River</option><option value="1061493596">Delta</option><option value="1061493597">Ebonyi</option><option value="1061493598">Edo</option><option value="1061493599">Ekiti</option><option value="1061493600">Enugu</option><option value="1061493601">Gombe</option><option value="1061493602">Imo</option><option value="1061493603">Jigawa</option><option value="1061493604">Kaduna</option><option value="1061493605">Kano</option><option value="1061493606">Katsina</option><option value="1061493607">Kebbi</option><option value="1061493608">Kogi</option><option value="1061493609">Kwara</option><option value="1061493610">Lagos</option><option value="1061493611">Nasarawa</option><option value="1061493612">Niger</option><option value="1061493613">Ogun</option><option value="1061493614">Ondo</option><option value="1061493615">Osun</option><option value="1061493616">Oyo</option><option value="1061493617">Plateau</option><option value="1061493618">Rivers</option><option value="1061493619">Sokoto</option><option value="1061493620">Taraba</option><option value="1061493621">Yobe</option><option value="1061493622">Zamfara</option>                                               
+				</select>
+			    </div><br>
+			    <div>
+			    
+			   <!--  <label for="destination">Destination</label> -->
+				<select name="" id="" class="form_control" required="">
+					<option selected="" disabled="">--Select State--</option>
+					<option value="1061493586">Abia</option><option value="1061493587">Abuja</option><option value="1061493588">Adamawa</option><option value="1061493589">Akwa Ibom</option><option value="1061493590">Anambra</option><option value="1061493591">Bauchi</option><option value="1061493592">Bayelsa</option><option value="1061493593">Benue</option><option value="1061493594">Borno</option><option value="1061493595">Cross River</option><option value="1061493596">Delta</option><option value="1061493597">Ebonyi</option><option value="1061493598">Edo</option><option value="1061493599">Ekiti</option><option value="1061493600">Enugu</option><option value="1061493601">Gombe</option><option value="1061493602">Imo</option><option value="1061493603">Jigawa</option><option value="1061493604">Kaduna</option><option value="1061493605">Kano</option><option value="1061493606">Katsina</option><option value="1061493607">Kebbi</option><option value="1061493608">Kogi</option><option value="1061493609">Kwara</option><option value="1061493610">Lagos</option><option value="1061493611">Nasarawa</option><option value="1061493612">Niger</option><option value="1061493613">Ogun</option><option value="1061493614">Ondo</option><option value="1061493615">Osun</option><option value="1061493616">Oyo</option><option value="1061493617">Plateau</option><option value="1061493618">Rivers</option><option value="1061493619">Sokoto</option><option value="1061493620">Taraba</option><option value="1061493621">Yobe</option><option value="1061493622">Zamfara</option>
+				</select>
+			    </div><br>
+			    <div>
+			    <!-- <label for="weight">Unit Weight</label> -->
+				<select name="" id="" class="form_control">
+					<option value="" readonly>---Unit Weight---</option>  
+					<option value="">1kg</option>  
+					<option value="">2kg</option>  
+				</select>
+			    </div><br>
+				
 				<div>
 				<input type="text" name="pickup-address" required required size="30">
-				<label for="weight" class="e1">Pickup Address</label>
+				<label for="weight" class="labeleffect">Pickup Address</label>
 				</div><br>
 				<div>
 				<input type="text" name="address" required required size="30">
-				<label for="weight" class="e1">Address of Reciever</label>
+				<label for="weight" class="labeleffect">Address of Reciever</label>
 				</div><br>
 				<div>
 				<input type="text" name="reciever_phone" required size="30">
-				<label for="weight" class="e1">Phone No of Reciever</label>
-				</div><br><br>
+				<label for="weight" class="labeleffect">Phone No of Reciever</label>
+				</div>
+
 				
 				<button type="Submit" name="order_submit">Get Quote</button>
 			  </form><br><br>
 			     <div>
-			    <input type="text" name="price" readonly="" value="" required>
-				<label for="price" class="e1">Price</label>
-				<br><br>
+			     <label for="price"><strong>Price</strong></label><br>
+			    <input type="text" name="price" readonly="" value="333" required>
+				<!-- <br> -->
 				<button type="Submit" name="order_submit">Place Order</button>
 				</div>
 		</div>
@@ -82,7 +97,7 @@
 	<footer>	
 		<div class="footer_bottom_area_user">
 			<div>
-			    <p>&#169; zootopiaExpress</p>
+			    <p>&#169; sendIT</p>
 			</div>
 			<div>
 				<p>Terms & Conditions <span>&#124;</span> Cookie Policy <span>&#124;</span> Privacy Policy <span>&#124;</span> Blog</p>
@@ -94,5 +109,6 @@
 		</div>
 	</footer>
 	</div>
+	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
