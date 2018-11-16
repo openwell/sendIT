@@ -1,4 +1,4 @@
-# SendIT aka Zootopia Express
+# SendIT
 
 [![Build Status](https://travis-ci.org/openwell/sendIT.svg?branch=develop)](https://travis-ci.org/openwell/sendIT)
 [![Coverage Status](https://coveralls.io/repos/github/openwell/sendIT/badge.svg)](https://coveralls.io/github/openwell/sendIT)
