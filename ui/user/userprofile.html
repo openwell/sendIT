@@ -3,14 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Edit</title>
+	<title>Dashboard</title>
 	<link rel="shortcut icon" href="../images/favi.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../css/styles.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-	<div class="fb_cont_wrapper">
+	<div class="dashB_container">
+		<div class="fb_cont_wrapper">
 	<header class="header_wrapper">
 		<div class="logo">
 			<a href="../index.html"><img src="../images/logo.png" alt="zootopiaXpress"></a>
@@ -39,35 +40,33 @@
 		</div>
 	</nav>
 
+	<section class="dashB_table">
+		<div class="user_p">
+			<div class="user_p_avatar">
+				<img src="../images/avatar.png" alt="avatar">
+			</div>
+			<div class="user_p_details">
+				<h4></h4>
+				<p>Name: JOHN DOE</p>
+				<p>Address: No 4 Harrison Maryland USA</p>
+				<p>Phone No: 0888848484</p>
 
-	<section class="edit_main">
-		<div class="order_form_edit">
-			<h3>Parcel Order Update</h3>
-			<form action="" method="">
-				<div>
-				<input type="text" name="location" required>
-				<label for="location" class="labeleffect">Location</label>
-				</div><br>
-				<div>
-				<input type="text" name="destination"  required>
-				<label for="destination" class="labeleffect">Destination</label>
-				</div><br>
-				<div>
-				<input type="text" name="weight" required >
-				<label for="weight" class="labeleffect">Unit Weight</label>
-				</div><br><br>
-				
-				
-				<button type="Submit" name="order_submit">Update</button>
-			</form><br><br>
-			     <div>
-			     <label for="price"><strong>Price</strong></label><br>
-			    <input type="text" name="price" readonly="" value="4444" required>
-				</div>
+			</div>
+		    
+		</div>
+	</section>
+	<section class="stats">
+		<div class="stats_div">
+			<h3><i class="fas fa-poll"></i>Statistic</h3>
+			<div class="stats_div3" ><i class="fas fa-chart-bar"></i>
+				<div><p>Nos of Delivered: 00</p></div>
+				<div><p>Nos in Transit: 00</p></div>
+				<div><p>Total Order: 00</p></div>
+			</div>
+			
 		</div>
 	</section>
 	
-
 	<footer>	
 		<div class="footer_bottom_area_user">
 			<div>
@@ -83,6 +82,6 @@
 		</div>
 	</footer>
 	</div>
-	
+</div>
 </body>
 </html>

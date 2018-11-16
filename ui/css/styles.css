@@ -10,7 +10,7 @@
 
 body{
 	background: #fff;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;*/
   font-family: 'Lato', sans-serif;
 }
 ul{
@@ -60,6 +60,10 @@ button:hover {
 	padding: 10px;
 }
 
+a:link{
+  text-decoration: none;
+}
+
 nav{
 	height: 50px;
 	margin: 10px auto;
@@ -67,7 +71,7 @@ nav{
 
 nav ul{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	padding-top: 10px;
 }
 
@@ -99,6 +103,8 @@ nav ul li a:link{
         transform: translatey(0); 
       }
     }
+
+ 
   .level1{
 	height: 500px;
 	 margin: 0 auto;
@@ -112,7 +118,6 @@ nav ul li a:link{
    }
    
     .level1_text form input{
-     border: none;
      padding: 4px;
      border-bottom: 2px solid #2866E5;
      background: transparent;
@@ -140,12 +145,14 @@ nav ul li a:link{
    	position: absolute;
    	top: 200px;
    	left: calc(50% + 200px);
-   	background-color: rgba(255,255,255,0.6);
-   	padding: 10px;
+    background: #2866E5;
+   	/*background-color: rgba(255,255,255,0.6);*/
+   	padding: 20px;
    	border-radius: 5px;
+    text-align: center;
    }
     
-     .level1_login a:link{
+    .level1_login a:link{
       text-decoration: none;
      }
 
@@ -157,13 +164,25 @@ nav ul li a:link{
    .level1_login button{
    	padding: 10px;
    	border-radius: 200px;
-    background: #2866E5;
-    color: #fff;
+    background: #fff;
+    font-weight: bold;
+    color: #2866E5;
    }
+
+   .level1_login a{
+     padding: 10px 20px;
+     font-weight: bold;
+     background: #fff;
+     color: #2866E5;
+   }
+
+
+      
 
     /*Level Two*/
    .level2{
    	 text-align: center;
+     background: #ecf0f1;
    }
    .level2 h2{
       padding: 20px;
@@ -175,8 +194,7 @@ nav ul li a:link{
      flex-wrap: wrap;
      margin: 0 auto;
      max-width: 100%;
-     /*background: #606E87;*/
-     background: white;
+    background: #ecf0f1;
    }
       
       /*Landing Footer*/
@@ -184,7 +202,7 @@ nav ul li a:link{
    	position: fixed;
    	bottom: 0;
    	background: #606E87;
-   	width: 100%;
+   	width: 1400px;
    	height: 50px;
    	padding: 10px;
    	text-align: text;
@@ -219,10 +237,15 @@ nav ul li a:link{
     .footer_bottom_area{
       padding-top: 20px;
     	margin: 0 auto;
-    	height: 150px;
+    	height: 100px;
     	display: flex;
     	flex-wrap: wrap;
+      background: #2866E5;
+      font-weight: bold;
     }
+     .footer_bottom_area i{
+      color: #fff;
+     }
     
     .footer_bottom_area a:link{
       text-decoration: none;
@@ -244,6 +267,7 @@ nav ul li a:link{
      	padding: 30px;
       border-radius: 5px;
       margin-bottom: 20px;
+      text-align: center;
 
      }
 
@@ -251,7 +275,6 @@ nav ul li a:link{
       display: block;
      	padding: 5px;
      	float: right;
-      border-radius: 5px;
       border-bottom: 1px solid #2866E5;
      }
      .signup_form button{
@@ -293,11 +316,27 @@ nav ul li a:link{
       margin: 0 auto;
       margin-bottom: 20px;
 	     }
+       
        .dashB_table{
         background: #4d69b1;
         height: 50vh;
         padding: 20px;
        }
+
+       .dashB_table select{
+       padding: 5px;
+       border-radius: 2px;
+       }
+
+       .dashB_table button{
+       padding: 10px;
+       border-radius: 3px;
+       }
+       .dashB_table input{
+       padding: 10px;
+       border-radius: 3px;
+       }
+
 
         table {
         border-collapse: collapse;
@@ -324,6 +363,8 @@ nav ul li a:link{
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
+      background: #2866E5;
+      font-weight: bold;
     }
     .footer_bottom_area_user a:link{
       text-decoration: none;
@@ -332,6 +373,9 @@ nav ul li a:link{
       flex: 1;
       text-align: center;
     }
+      .footer_bottom_area_user i{
+      color: #fff;
+     }
     
    
 	   .stats{
@@ -356,17 +400,17 @@ nav ul li a:link{
           padding: 20px;
       }
 
-       /*======================================================
+    /*======================================================
                           OrderPage
-     ======================================================*/
+    ======================================================*/
 
 		 /*Order Page*/
-	.order_form{
+	/*.order_form{
 		max-width: 400px;
 		padding: 20px;
 		margin: 0 auto;
 		border-radius: 20px;
-		background: #5B2BEF;
+		background: #5B2BEF; 
 	}
 	.order_form input{
 		float: right;
@@ -375,7 +419,16 @@ nav ul li a:link{
 	.order_form button{
 		padding: 10px 20px;
 		border-radius: 200px;
-	}
+	}*/
+
+    /*======================================================
+                          All Order Table  Page
+     ======================================================*/
+
+     .dashB_table_2{
+        background: #4d69b1;
+        padding: 20px;
+       }
  /*======================================================
                           Order Details
      ======================================================*/
@@ -402,11 +455,16 @@ nav ul li a:link{
        margin: 0 auto;
        margin-top: 30px;
     }
+
+    .map img{
+      max-width: 50vw;
+    }
+  
    /*======================================================
                           Edit page
      ======================================================*/
      .edit_main{
-       background: #fff;
+       background: #4d69b1;
         height: 100vh;
         padding: 20px;
      }
@@ -415,8 +473,8 @@ nav ul li a:link{
     max-width: 400px;
     padding: 20px;
     margin: 0 auto;
-    border-radius: 20px;
-    background:  #4d69b1;
+    text-align: center;
+    background:  #fff;
   }
 
    .order_form_edit form{
@@ -428,19 +486,36 @@ nav ul li a:link{
    }
 
    .order_form_edit h3{
-      color: #fff;
+      color: #2866E5;
    }
 
     .order_form_edit input{
-      background: #4d69b1;
       padding: 5px;
       margin: 5px 0;
-      border: 0.5px solid #ffff;
+      border-bottom: 0.5px solid #2866E5;
+    } 
+    .form_control{
+    display: block;
+    width: 70%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .order_form_edit select{
+      margin: 0 auto;
     }
   .order_form_edit button{
     padding: 10px 20px;
     border-radius: 200px;
-    background: #ffff;
+    background: #2866E5;
    }
 
    .order_form_edit label{
@@ -450,33 +525,144 @@ nav ul li a:link{
        left: 100px;
        top: 0;
        pointer-events: none;
-       color: #fff;
+       color: #2866E5;
    }
     
-    .e1{
+    .labeleffect{
       transform: translate3d(0,8px,0) scale(1);
       font-size: 20px;
     }
 
-    input:blur + .e1{
+    input:blur + .labeleffect{
       transform: translate3d(0,8px,0) scale(1);
       font-size: 20px;
     }
 
-    input:focus + .e1{
+    input:focus + .labeleffect{
        transform: translate3d(0,-10px,0) scale(.85);
-       color: #fff;
+       color: #2866E5;
        font-size: 15px;
     }
-      input:valid + .e1{
+      input:valid + .labeleffect{
        transform: translate3d(0,-10px,0) scale(.85);
-       color: #fff;
+       color: #2866E5;
        font-size: 15px;
     }
 
     .order_form_edit div{
       position: relative;
     }
-/*======================================================
+    /*======================================================
                           Admin Page
      ======================================================*/
+
+
+
+        /*======================================================
+                          Track Page
+     ======================================================*/
+    .track{
+      text-align: center;
+      height: 70vh;
+      background: #4d69b1;
+    }
+
+
+        /*======================================================
+                          User Profile Page
+     ======================================================*/
+     .user_p_details{
+        margin-left: 40px;
+
+     }
+      .user_p_avatar img{
+        height: 100px;
+        border-radius: 300px;
+        background: grey;
+      }
+
+      .user_p{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+    /*======================================================
+                          Media Queries
+     ======================================================*/
+
+   
+            /*// Extra small devices (portrait phones, less than 576px)*/
+      @media (max-width: 575.98px) { 
+        .logo img{
+            height: 50px;
+          } 
+        .drone img{
+         /* display: none;*/
+         height: 200px;
+        }
+        .level1_text{
+          display: none;
+        }
+
+         .level1_login{
+          position: absolute;
+          top: 200px;
+          left: calc(10%);
+          background: #2866E5;
+          /*background-color: rgba(255,255,255,0.6);*/
+          padding: 20px;
+          border-radius: 5px;
+          text-align: center;
+              }
+          nav{
+          height: 50px;
+          margin-top: 40px;
+          margin-bottom: 0px;
+          font-size: 12px;
+           }
+          
+           .float_tracker p{
+            top: 15px;
+            left: 2%;
+         }
+
+         .float_tracker input{
+          padding: 5px;
+         }
+
+         .float_tracker button{
+          padding: 5px 10px;
+          border-radius: 40px;
+         }
+
+        .float_tracker form{
+          top: 10px;
+          left: 12%;
+        }
+
+        header{
+          font-size: 13px;
+        }
+
+        }
+
+      /*// Small devices (landscape phones, 576px and up)*/
+      @media (min-width: 576px) and (max-width: 767.98px) { 
+         .logo img{
+            height: 70px;
+          } 
+
+       }
+
+      /*// Medium devices (tablets, 768px and up)*/
+      @media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+      /*// Large devices (desktops, 992px and up)*/
+      @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+      /*// Extra large devices (large desktops, 1200px and up)*/
+      @media (min-width: 1200px) { ... }
+
+
+
